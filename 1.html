@@ -3,53 +3,91 @@
 <head>
     <title>WEB1-HTML</title>
     <meta charset="utf-8">
+    <style>
+        body{
+            margin:0;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        h1 {
+            font-size: 45px;
+            text-align : center;
+            border-bottom:2px solid gray;
+            margin:0;
+            padding:20px;
+        }
+        #article h1{
+            border:0;
+        }
+        #grid ol{
+            border-right : 2px solid gray;
+            width:100px;
+            margin:0;
+            padding:20px;
+            padding-left:33px;
+        }
+        #grid{
+            display:grid;
+            grid-template-columns:150px 1fr;
+        }
+        
+        #article{
+            padding:25px;
+        }
+    </style>
 </head>
 
 <body>
     <h1><a href="index.html">WEB</a></h1>
-    <ol>
-        <li><a href="1.html">HTML</a></li>
-        <li><a href="2.html">CSS</a></li>
-        <li><a href="3.html">JavaScript</a></li>
-    </ol>
-    <h2><a href="https://www.w3.org/TR/2011/WD-html5-20110405/" target="_blank" title="html specification">HTML</a>이란 무엇인가?</h2>
-    시작 : File을 눌러 새로운 폴더에 web -> <strong>1.<u>html.</u></strong>
-    새로운 브라우저를 열어 제목을 드래그하여 주소창에 옮긴다. 혹은 <strong>ctrl+o.</strong><br> 
-    저장 : <strong>ctrl+s</strong>
-    <br><br>태그(tag) : 설명하는 것. 
-    열리는 태그와 닫히는 태그가 있다. 
-    뒤에는 슬래시를 추가하여 구분한다.<br>
-    태그 예 : strong(글씨 굵게), u(밑줄), h1~6(제목), br(줄바꿈), p(paragraph)<br>
-    태그 검색 : HTML h1 tag : 예시를 붙여넣는다.(heading : 제목)<br>
-    h1~6는 제목을 나타내는 태그이다.(7은 없다.6까지만)
-    <h1>This is heading 1</h1>
-    <h2>This is heading 2</h2>
-    <h3>This is heading 3</h3>
-    <h4>This is heading 4</h4> 
-    <h5>This is heading 5</h5>
-    <h6>This is heading 6</h6>
-    <p style="margin-top:40px;">html new line tag : br (끝을 닫을 필요는 없다.)<br>
-    html paragraph tag : p (끝을 닫아야 한다.) css를 이용하여 문단의 여백을 조절할 수 있다.</p>
+    <div id="grid">
+        <ol>
+            <li><a href="1.html">HTML</a></li>
+            <li><a href="2.html">CSS</a></li>
+            <li><a href="3.html">JavaScript</a></li>
+        </ol>
+        <div id="article">
+            <h2><a href="https://www.w3.org/TR/2011/WD-html5-20110405/" target="_blank" title="html specification">HTML</a>이란 무엇인가?</h2>
+            시작 : File을 눌러 새로운 폴더에 web -> <strong>1.<u>html.</u></strong>
+            새로운 브라우저를 열어 제목을 드래그하여 주소창에 옮긴다. 혹은 <strong>ctrl+o.</strong><br> 
+            저장 : <strong>ctrl+s</strong>
+            <br><br>태그(tag) : 설명하는 것. 
+            열리는 태그와 닫히는 태그가 있다. 
+            뒤에는 슬래시를 추가하여 구분한다.<br>
+            태그 예 : strong(글씨 굵게), u(밑줄), h1~6(제목), br(줄바꿈), p(paragraph)<br>
+            태그 검색 : HTML h1 tag : 예시를 붙여넣는다.(heading : 제목)<br>
+            h1~6는 제목을 나타내는 태그이다.(7은 없다.6까지만)
+            <h1>This is heading 1</h1>
+            <h2>This is heading 2</h2>
+            <h3>This is heading 3</h3>
+            <h4>This is heading 4</h4> 
+            <h5>This is heading 5</h5>
+            <h6>This is heading 6</h6>
+            <p style="margin-top:40px;">html new line tag : br (끝을 닫을 필요는 없다.)<br>
+            html paragraph tag : p (끝을 닫아야 한다.) css를 이용하여 문단의 여백을 조절할 수 있다.</p>
 
-    <p>속성(attribute) : 태그만으로 부족할 때 사용. 위치는 상관 없음.<br>
-    img : 이미지 삽입 태그.<br>
-    src(source)="coding.jpg"  width="100%" 라는 attribute를 작성.<br>
-    <img src="coding.jpg" width="50%"> </p>
+            <p>속성(attribute) : 태그만으로 부족할 때 사용. 위치는 상관 없음.<br>
+            img : 이미지 삽입 태그.<br>
+            src(source)="coding.jpg"  width="100%" 라는 attribute를 작성.<br>
+            <img src="coding.jpg" width="50%"> </p>
 
-    <p>ol-ul-li<br>
-    li : 목차(list)의 태그<br>
-    ul : unordered list.<br>
-    ol : ordered list.<br>
-    *li의 부모태그. li는 ul의 자식태그. 자식태그를 묶을 수 있다.<br>
-    *표는 table 태그를 이용.</p>
-    <p>title : 웹페이지의 제목 설정 태그<br>
-    meta charset="utf-8" : 브라우저야, utf-8로 문서를 읽어라!<br>
-    *charset=character set<br>
-    시작은 !doctype html<br>
-    html - head - body<br></p>
-    <p>a : anchor : 정박 => link = hyper text<br>
-    href="" : hyper text reference<br>
-    target="_blank" : 새로운 창으로 열리기<br>
-    title="이름" : 마우스 갖다 댔을 때 이름으로 보이게 하기<br></p>
+            <p>ol-ul-li<br>
+            li : 목차(list)의 태그<br>
+            ul : unordered list.<br>
+            ol : ordered list.<br>
+            *li의 부모태그. li는 ul의 자식태그. 자식태그를 묶을 수 있다.<br>
+            *표는 table 태그를 이용.</p>
+            <p>title : 웹페이지의 제목 설정 태그<br>
+            meta charset="utf-8" : 브라우저야, utf-8로 문서를 읽어라!<br>
+            *charset=character set<br>
+            시작은 !doctype html<br>
+            html - head - body<br></p>
+            <p>a : anchor : 정박 => link = hyper text<br>
+            href="" : hyper text reference<br>
+            target="_blank" : 새로운 창으로 열리기<br>
+            title="이름" : 마우스 갖다 댔을 때 이름으로 보이게 하기<br></p>
+        </div>
+    </div>
 </body>
 </html>

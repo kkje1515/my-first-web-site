@@ -3,16 +3,51 @@
 <head>
     <title>WEB1-JavaScript</title>
     <meta charset="utf-8">
+    <style>
+        body{
+            margin:0;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        h1 {
+            font-size: 45px;
+            text-align : center;
+            border-bottom:2px solid gray;
+            margin:0;
+            padding:20px;
+        }
+        #grid ol{
+            border-right : 2px solid gray;
+            width:100px;
+            margin:0;
+            padding:20px;
+            padding-left:33px;
+        }
+        #grid{
+            display:grid;
+            grid-template-columns:150px 1fr;
+        }
+        
+        #article{
+            padding:25px;
+        }
+    </style>
 </head>
 
 <body>
     <h1><a href="index.html">WEB</a></h1>
+    <div id="grid">
     <ol>
         <li><a href="1.html">HTML</a></li>
         <li><a href="2.html">CSS</a></li>
         <li><a href="3.html">JavaScript</a></li>
     </ol>
-    <h2><a href="https://www.w3resource.com/javascript/introduction/ECMA-and-javascript.php" target="_blank" title="JavaScript specification">JavaScript</a>란 무엇인가?</h2>
-    JavaScript is a cross-platform, object-oriented scripting language developed by Netscape was first used in Netscape browsers. However, Netscape was working with European Computer Manufacturers Association (ECMA) to deliver a standardized, international programming language based on core JavaScript. ECMA is an international standards association for information and communication systems. This standardized version of JavaScript, called ECMAScript, behaves the same way in all applications that support the standard. Companies can use the open standard language to develop their implementation of JavaScript. The first version of the ECMA standard was documented in the ECMA-262 specification. The ECMA-262 standard is also approved by the ISO (International Organization for Standardization) as ISO-16262.
+        <div id="article">
+        <h2><a href="https://www.w3resource.com/javascript/introduction/ECMA-and-javascript.php" target="_blank" title="JavaScript specification">JavaScript</a>란 무엇인가?</h2>
+        JavaScript is a cross-platform, object-oriented scripting language developed by Netscape was first used in Netscape browsers. However, Netscape was working with European Computer Manufacturers Association (ECMA) to deliver a standardized, international programming language based on core JavaScript. ECMA is an international standards association for information and communication systems. This standardized version of JavaScript, called ECMAScript, behaves the same way in all applications that support the standard. Companies can use the open standard language to develop their implementation of JavaScript. The first version of the ECMA standard was documented in the ECMA-262 specification. The ECMA-262 standard is also approved by the ISO (International Organization for Standardization) as ISO-16262.
+        </div>
+    </div>
 </body>
 </html>
