@@ -30,8 +30,19 @@
             grid-template-columns:150px 1fr;
         }
         
-        #article{
-            padding:25px;
+        #grid #article{
+            padding-left:25px;
+        }
+        @media(max-width:600px) {
+            #grid{
+                display:block;
+            }
+            #grid ol{
+                border-right:none;
+            }
+            h1{
+                border-bottom:none;
+            }
         }
     </style>
 </head>
